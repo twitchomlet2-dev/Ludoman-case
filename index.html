@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#101912">
+  <title>LUDOMAN Case</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <div class="brand-icon">🐸</div>
+      <div class="brand">
+        <div class="brand-name">LUDOMAN <span>CASE</span></div>
+        <div class="subtitle">Открывай · Собирай · Побеждай</div>
+      </div>
+      <div class="profile" id="avatar">L</div>
+    </header>
+
+    <section class="balance-card">
+      <div>
+        <div class="muted">ТВОЙ БАЛАНС</div>
+        <div class="balance"><span id="balance">—</span> <small>🪙</small></div>
+      </div>
+      <div class="coin">🪙</div>
+    </section>
+
+    <div class="section-head">
+      <div><h2>Выбери кейс</h2><p>Каждый кейс — новый сюрприз</p></div>
+      <span class="tag">DEMO</span>
+    </div>
+    <div class="cases" id="cases"></div>
+
+    <section class="result hidden" id="result">
+      <div class="result-kicker">ТЕБЕ ВЫПАЛО</div>
+      <div class="result-emoji" id="resultEmoji">🎁</div>
+      <h2 id="resultName">Приз</h2>
+      <div class="rarity" id="resultRarity">Редкий</div>
+      <button class="primary" id="resultClose">Круто!</button>
+    </section>
+
+    <section class="section-head inventory-head">
+      <div><h2>Моя коллекция</h2><p>Предметы, которые ты собрал</p></div>
+      <span class="count" id="inventoryCount">0</span>
+    </section>
+    <div class="inventory" id="inventory"><div class="empty">Пока пусто — пора открыть кейс!</div></div>
+    <div class="footnote">Демо-версия: предметы виртуальные и не имеют денежной стоимости. Реальные подарки и NFT пока не подключены.</div>
+  </div>
+  <nav class="bottom-nav">
+    <a class="active" href="#cases">🎁<span>Кейсы</span></a>
+    <a href="#inventory">🎒<span>Коллекция</span></a>
+    <a href="#about">ℹ️<span>О проекте</span></a>
+  </nav>
+  <div class="toast" id="toast"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
